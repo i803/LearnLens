@@ -82,18 +82,6 @@ python scripts/verify_content_bundle.py # teaching-note integrity
 cd web && npm run typecheck             # frontend types
 ```
 
-## More detail
-
-| | |
-|---|---|
-| How it works and demo script | [HOW_IT_WORKS_AND_DEMO_SCRIPT.md](HOW_IT_WORKS_AND_DEMO_SCRIPT.md) |
-| Deploy to Vercel | [docs/DEPLOY_VERCEL.md](docs/DEPLOY_VERCEL.md) |
-| Teacher real-data mode and hosted setup | [docs/teacher-real-data-mode.md](docs/teacher-real-data-mode.md) |
-| Responsible AI | [docs/responsible-ai.md](docs/responsible-ai.md) |
-| Design decisions and reuse | [docs/DECISIONS.md](docs/DECISIONS.md) |
-| Evidence status | [docs/evidence.md](docs/evidence.md) |
-| Judge deck | [docs/presentation/](docs/presentation/) |
-
 ## Ready to go live
 
 | Area | What is in place |
