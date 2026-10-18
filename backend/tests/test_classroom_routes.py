@@ -56,6 +56,7 @@ def test_real_class_shows_joined_student_and_their_progress():
     row = body['students'][0]
     assert row['label'] == 'Blue Falcon' and row['joinedAt'] and row['attempts'] == 0 and row['mastery'] == {}
     assert row['id'] == joined['studentId']
+<<<<<<< HEAD
 
 
 def test_feedback_summary_is_teacher_only_and_class_scoped():
@@ -81,3 +82,5 @@ def test_rate_limit_returns_429(monkeypatch):
     codes = [client.get('/teacher/analytics').status_code for _ in range(5)]
     assert codes[:3] == [200, 200, 200] and codes[3:] == [429, 429]
     m._hits.clear()
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1

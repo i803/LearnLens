@@ -32,6 +32,10 @@ export function TeacherPage({ analytics = false }: { analytics?: boolean }) {
 
   useEffect(() => {
     api<TeacherData>('/teacher/analytics').then(setD).catch(() => setD({ concepts: [], studentsTracked: 0, persistence: { source: 'memory-fallback', available: false } }))
+<<<<<<< HEAD
+=======
+    api<any>('/feedback/summary').then(setFb).catch(() => setFb(null))
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
     // Reopen this browser's own class if the teacher created one; otherwise show the labelled demo class.
     const mine = loadState<{ code?: string; key?: string }>('learnlens_teacher_class', {})
     if (mine.code && mine.key) loadHeatmap(mine.code, mine.key); else loadHeatmap(DEMO_CODE, DEMO_KEY)
@@ -48,7 +52,11 @@ export function TeacherPage({ analytics = false }: { analytics?: boolean }) {
     setBusy(true); setError(''); setNotice(''); setReteach(null)
     try {
       const result = await api<Heatmap>(`/teacher/classes/${encodeURIComponent(code)}/heatmap`, { headers: { 'X-Teacher-Key': key } })
+<<<<<<< HEAD
       api<any>(`/feedback/summary?classCode=${encodeURIComponent(code)}`, { headers: { 'X-Teacher-Key': key } }).then(setFb).catch(() => setFb(null)); setHeatmap(result); setClassCode(code); setTeacherKey(key); if (!result.synthetic) saveState('learnlens_teacher_class', { code, key }); setNotice(result.synthetic ? 'Illustrative classroom loaded. These are not real student measurements.' : 'Classroom learning signals loaded.')
+=======
+      setHeatmap(result); setClassCode(code); setTeacherKey(key); if (!result.synthetic) saveState('learnlens_teacher_class', { code, key }); setNotice(result.synthetic ? 'Illustrative classroom loaded. These are not real student measurements.' : 'Classroom learning signals loaded.')
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
     } catch (e) { setError(e instanceof Error ? e.message : 'Could not load class heatmap.') } finally { setBusy(false) }
   }
 
@@ -87,7 +95,11 @@ export function TeacherPage({ analytics = false }: { analytics?: boolean }) {
 
     <section className="mt-4 rounded-2xl border border-[#dbe4dc] bg-white p-5">
       <h2 className="font-semibold">Student feedback</h2>
+<<<<<<< HEAD
       {fb && fb.responses > 0 ? <><p className="mt-1 text-sm text-[#61746e]">{fb.responses} responses · average rating {fb.averageRating}/5</p><ul className="mt-3 space-y-2 text-sm">{fb.recentComments.map((c, i) => <li key={i} className="rounded-lg bg-[#f6f4ee] p-3">{c}</li>)}</ul></> : <p className="mt-1 text-sm text-[#61746e]">No feedback yet from this class. Students who joined with your class code can submit it at /feedback.</p>}
+=======
+      {fb && fb.responses > 0 ? <><p className="mt-1 text-sm text-[#61746e]">{fb.responses} responses · average rating {fb.averageRating}/5</p><ul className="mt-3 space-y-2 text-sm">{fb.recentComments.map((c, i) => <li key={i} className="rounded-lg bg-[#f6f4ee] p-3">{c}</li>)}</ul></> : <p className="mt-1 text-sm text-[#61746e]">No feedback yet. Submissions from /feedback appear here.</p>}
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
     </section>
 
     {heatmap && <section className="mt-8 rounded-[26px] border border-border bg-card p-6 sm:p-8">

@@ -1,7 +1,11 @@
 from __future__ import annotations
 import uuid
 from datetime import datetime, timezone
+<<<<<<< HEAD
 from fastapi import APIRouter, Header, HTTPException
+=======
+from fastapi import APIRouter, HTTPException
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
 from ..schemas import ProgressResponse, FeedbackRequest, FeedbackSummaryResponse, JoinRequest, DeleteDataRequest
 from ..config import AI_ENABLED, DEMO_MODE, DEMO_TIME_TRAVEL, MAX_UPLOAD_MB, ai_configured, openrouter_configured, gemini_configured, OPENROUTER_MODEL, supabase_configured
 from ..persistence import persistence
@@ -104,9 +108,14 @@ async def feedback_submit(req: FeedbackRequest):
     return {"ok":True}
 
 @router.get("/feedback/summary", response_model=FeedbackSummaryResponse)
+<<<<<<< HEAD
 async def feedback_summary(classCode: str, x_teacher_key: str | None = Header(default=None, alias="X-Teacher-Key")):
     from .teacher import _get_class, _authorized, class_member_ids
     row = await _get_class(classCode)
     if not row or not _authorized(row, classCode, x_teacher_key):
         raise HTTPException(403, "A valid class code and X-Teacher-Key are required")
     return FeedbackSummaryResponse(**(await persistence.feedback_summary(await class_member_ids(classCode))))
+=======
+async def feedback_summary():
+    return FeedbackSummaryResponse(**(await persistence.feedback_summary()))
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1

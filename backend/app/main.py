@@ -1,14 +1,21 @@
+<<<<<<< HEAD
 import time
 from collections import defaultdict, deque
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from .config import FRONTEND_ORIGINS, RATE_LIMIT_PER_MIN, RATE_LIMIT_HEAVY_PER_MIN
+=======
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from .config import FRONTEND_ORIGINS
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
 from .routers.ai import router as ai_router
 from .routers.student import router as student_router
 from .routers.teacher import router as teacher_router
 
 app = FastAPI(title="LearnLens AI Service", version="2.0.0", description="Learning diagnosis, grounded lessons, spaced retesting, and class insights.")
+<<<<<<< HEAD
 _hits: dict[str, deque] = defaultdict(deque)
 _HEAVY = ("/work/analyze", "/diagnostic/", "/lesson/", "/quiz/", "/diagnosis", "/auth/join", "/teacher/classes", "/feedback")
 
@@ -31,6 +38,8 @@ async def rate_limit(request: Request, call_next):
             _hits.pop(k, None)
     return await call_next(request)
 
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
 app.add_middleware(
     CORSMiddleware,
     allow_origins=FRONTEND_ORIGINS,

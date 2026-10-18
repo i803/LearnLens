@@ -18,8 +18,11 @@ async function forward(req: NextRequest, path: string[]) {
   if (contentType) headers.set('content-type', contentType)
   const teacherKey = req.headers.get('x-teacher-key')
   if (teacherKey) headers.set('x-teacher-key', teacherKey)
+<<<<<<< HEAD
   const forwardedFor = req.headers.get('x-forwarded-for')
   if (forwardedFor) headers.set('x-forwarded-for', forwardedFor)
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
   const authorization = req.headers.get('authorization')
   if (authorization) headers.set('authorization', authorization)
   const init: RequestInit = { method: req.method, headers, cache: 'no-store' }

@@ -29,6 +29,7 @@ def _authorized(class_row: dict, code: str, supplied: str | None) -> bool:
     digest = hashlib.sha256(supplied.encode()).hexdigest()
     return secrets.compare_digest(digest, str(class_row.get("teacher_key_hash", "")))
 
+<<<<<<< HEAD
 async def class_member_ids(code: str) -> set[str]:
     code = code.upper()
     ids = set(memory.class_students.get(code, []))
@@ -36,6 +37,8 @@ async def class_member_ids(code: str) -> set[str]:
         ids |= {str(r["id"]) for r in await persistence.db.select("students", {"class_code": f"eq.{code}"}, select="id") if r.get("id")}
     return ids
 
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
 @router.post("/teacher/classes")
 async def create_class(req: CreateClassRequest):
     alphabet = string.ascii_uppercase + string.digits

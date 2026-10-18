@@ -316,12 +316,20 @@ class Persistence:
         else:
             memory.feedback.insert(0, feedback)
 
+<<<<<<< HEAD
     async def feedback_summary(self, student_ids: set[str]) -> dict[str, Any]:
         if self.enabled:
             rows = await self.db.select("feedback", {}, select="student_id,rating,comment,created_at", order="created_at.desc", limit=500)
         else:
             rows = memory.feedback
         rows = [r for r in rows if str(r.get("student_id")) in student_ids][:100]
+=======
+    async def feedback_summary(self) -> dict[str, Any]:
+        if self.enabled:
+            rows = await self.db.select("feedback", {}, select="rating,comment,created_at", order="created_at.desc", limit=100)
+        else:
+            rows = memory.feedback[:100]
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
         ratings = [int(r.get("rating", 0)) for r in rows if r.get("rating") is not None]
         comments = [str(r.get("comment")) for r in rows if r.get("comment")]
         return {

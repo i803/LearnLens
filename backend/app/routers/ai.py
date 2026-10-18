@@ -31,8 +31,11 @@ async def work_analyze(files: list[UploadFile] = File(default=[]), studentId: st
             raise HTTPException(413, f"Files exceed the {MAX_UPLOAD_MB:g} MB upload limit")
         content_type = upload.content_type or ""
         filename = upload.filename or "uploaded-work"
+<<<<<<< HEAD
         if not (data[:5] == b"%PDF-" or data[:8] == b"\x89PNG\r\n\x1a\n" or data[:3] == b"\xff\xd8\xff" or (data[:4] == b"RIFF" and data[8:12] == b"WEBP")):
             raise HTTPException(415, "Only real PDF, PNG, JPEG or WebP files are accepted.")
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
         fingerprints.append(filename.encode() + b"\0" + content_type.encode() + b"\0" + data)
         file_meta.append((filename, content_type, data))
         if content_type == "application/pdf" or filename.lower().endswith(".pdf"):

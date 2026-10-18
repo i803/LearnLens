@@ -20,8 +20,11 @@ DEMO_MODE = os.getenv("DEMO_MODE", "false").lower() == "true"
 RAG_ENABLED = os.getenv("RAG_ENABLED", "true").lower() == "true"
 DEMO_TIME_TRAVEL = os.getenv("DEMO_TIME_TRAVEL", "false").lower() == "true"
 MAX_UPLOAD_MB = float(os.getenv("MAX_UPLOAD_MB", "8"))
+<<<<<<< HEAD
 RATE_LIMIT_PER_MIN = int(os.getenv("RATE_LIMIT_PER_MIN", "300"))
 RATE_LIMIT_HEAVY_PER_MIN = int(os.getenv("RATE_LIMIT_HEAVY_PER_MIN", "40"))
+=======
+>>>>>>> b9d02d34e42932237d9f91969848006efc59b2b1
 FRONTEND_ORIGINS = [x.strip().rstrip("/") for x in os.getenv("FRONTEND_ORIGINS", os.getenv("FRONTEND_ORIGIN", "http://localhost:3000")).split(",") if x.strip()]
 FRONTEND_ORIGIN = FRONTEND_ORIGINS[0] if FRONTEND_ORIGINS else "http://localhost:3000"
 
