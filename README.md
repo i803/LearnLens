@@ -1,96 +1,192 @@
-# LearnLens AI
+# LearnLens AI --- Understand the Mistake. Fix the Idea.
 
-**Understand the mistake. Fix the idea.**
-An adaptive learning prototype that tells students *why* an answer went wrong, then helps them fix it. Built for Craft N Code 2026.
+**Craft N Code Karnataka 2026 · AI for Education**
 
-> Students get marks, not reasons. Teachers see repeated errors but have no time to reteach each student. LearnLens closes both gaps.
+LearnLens AI is an AI-assisted learning platform designed to help
+students understand the reasoning behind mistakes, revisit concepts, and
+check their understanding. It also explores how patterns in learning
+difficulties can help teachers plan focused follow-up instruction.
 
-## What it does
+## Project links
 
-`Upload work or pick a topic → see the evidence → possible misconception → 3-question check → focused lesson → practice → spaced retest → teacher view`
+-   **Live website:** https://learnlens-ai-beta.vercel.app/
+-   **Source code:** https://github.com/i803/LearnLens-AI
+-   **Demo video (Google Drive):**
+    https://drive.google.com/file/d/1XwmMzWBTFPK11WL\_-1suAzWI6Z-Z6sfn/view?usp=sharing
+-   **Google Slides:**
+    https://docs.google.com/presentation/d/1q64tbaRnrShLjewuNOyLIGgVQteb5G1RzcAqud16Mis/edit?usp=sharing
 
-| For students | For teachers |
-|---|---|
-| Upload a worksheet (PDF or image) or pick a topic | Create a private class and share its code |
-| Get a *possible* misconception, shown as a hypothesis with evidence | Watch students join, live |
-| Confirm it with 3 fresh questions | See a student × concept mastery heatmap |
-| Learn from a lesson grounded in 45 teaching notes (English, Hindi, Kannada) | Get the top shared misconceptions and a 10-minute reteach plan |
-| Practise, then retest after 24 hours or more to confirm mastery | Export CSV and read student feedback |
+**Access check:** The Drive video and Slides must be set to **Anyone
+with the link --- Viewer**. Test both links in a private/incognito
+browser window before submitting.
 
-Students join with a **nickname only**: no email, no password. Each browser keeps its own private data.
+## 1. Problem and target users
 
-## Run it in 2 minutes
+Students may receive a score or correction without understanding the
+misconception that led to an incorrect answer. Teachers can also have
+limited time to identify recurring learning gaps and prepare targeted
+revision.
 
-You need Python 3.11+ and Node.js 20.9+. **No API keys are required**: a clean local checkout with no `.env` file runs the offline judge walkthrough with bundled learning content and a clearly marked synthetic teacher class. This is a local-only convenience; the deployed website never serves the synthetic class.
+-   **Primary users:** Students who want to understand and learn from
+    mistakes.
+-   **Secondary users:** Teachers who want to identify learning gaps and
+    plan follow-up instruction.
 
-**1. Backend** (terminal 1)
+## 2. Solution and workflow
 
-```bash
-cd backend
-python -m venv .venv
-# Windows cmd:   .venv\Scripts\activate.bat
-# PowerShell:    .venv\Scripts\Activate.ps1
-# macOS/Linux:   source .venv/bin/activate
-pip install -r requirements.txt
-python -m uvicorn app.main:app --reload --port 8123
+LearnLens is built around a learning-support loop:
+
+1.  **Submit work or answer a diagnostic:** The learner provides an
+    answer or learning input through the available interface.
+2.  **Explore the mistake:** AI-assisted feedback can help explain the
+    likely reasoning gap, depending on the implemented feature.
+3.  **Review the concept:** The learner uses the explanation and any
+    available practice support to revisit the topic.
+4.  **Check understanding:** A follow-up question or retest, where
+    implemented, can help the learner check their understanding.
+5.  **Support teaching:** Teacher-facing views, where implemented, can
+    help surface patterns that may need additional instruction.
+
+The live site is the deployed demonstration of the project. During
+judging, demonstrate only features that are working in the current
+build; do not describe planned features as completed functionality.
+
+## 3. AI and data
+
+-   **AI access:** OpenRouter API.
+-   **AI model:** The underlying model is the model selected in the
+    application's OpenRouter configuration. OpenRouter is the gateway,
+    not the model itself; identify the configured model name/ID from the
+    project configuration before final submission.
+-   **AI tasks:** AI-assisted learning feedback and explanations, to the
+    extent implemented in the current application. Describe the exact
+    input and output shown in the demo.
+-   **Data:** No public dataset is identified in the project information
+    used to prepare this README. If the project uses sample questions,
+    synthetic examples, or a public dataset, name the source and clearly
+    label synthetic data.
+-   **Evaluation:** Do not claim measured accuracy or learning gains
+    without test records. Before submission, describe the manual test
+    cases run, what was checked, and any observed failures or
+    limitations.
+
+## 4. Technology and deployment
+
+-   **Frontend:** See the frontend application's package manifest and
+    source code in this repository.
+-   **Backend/API:** See the backend application's source code and
+    configuration in this repository.
+-   **Database/storage:** Describe the database or storage service
+    actually used; if none is used, state that explicitly.
+-   **AI integration:** OpenRouter API; the configured model identifier
+    should be documented from the app configuration.
+-   **Deployment:** Vercel --- https://learnlens-ai-beta.vercel.app/
+
+For a stronger reproducibility record, add the exact frontend framework,
+backend framework, database (if any), and relevant library names after
+checking the repository's package manifests and source code.
+
+## 5. Run locally
+
+Clone the project:
+
+``` bash
+git clone https://github.com/i803/LearnLens-AI.git
+cd LearnLens-AI
 ```
 
-**2. Frontend** (terminal 2)
+The repository contains separate application areas if the project is
+organized into frontend and backend folders. Check the root README,
+package manifests, and available scripts to determine the exact
+installation and startup commands for each service. Verify those
+commands from a clean checkout before publishing them here.
 
-```bash
-cd web
-npm install
-npm run dev
-```
+### Environment variables and secrets
 
-Open **http://localhost:3000**.
+Configure required environment variables locally using the variable
+names expected by the application. Never commit API keys, passwords,
+access tokens, or production secrets. If the project has an
+`.env.example` file, use it as the reference for required variable
+names. Keep the actual values private.
 
-## Try it (about 3 minutes)
+## 6. AI development tools, APIs, and reused code
 
-1. Open **Teacher view** (`/teacher`) and click **Create a private classroom code**. Copy the class code.
-2. In a second browser window or profile, open **Join a class** (`/join`). Enter a nickname, the class code, and tick consent. The student appears in the teacher's roster within 10 seconds.
-3. As the student, go to **My work**, click **Use bundled demo**, and follow the diagnosis, the 3-question check, the lesson and practice.
-4. Back in the teacher view, the roster and heatmap now show that student's progress. Try **reteach plan**, **Export evidence** and the **/feedback** page.
+-   **AI API:** OpenRouter.
+-   **AI development tools:** Disclose the coding assistants actually
+    used by the team.
+-   **Third-party libraries and services:** List the main dependencies
+    and services from the repository's package manifests and
+    configuration.
+-   **Reused code/templates:** Disclose any starter templates, copied
+    snippets, external repositories, or adapted code. If none were used,
+    state that explicitly.
 
-For the local judge walkthrough, a clean checkout with no `.env` file opens sample class `CSE-A` with teacher key `demo-teacher-key`. **Its 8 students are synthetic and are never served by the hosted website.** If any project `.env` file exists (or service credentials are provided through the environment), the sample classroom is disabled and the teacher pages show real class records only. In that mode, enter an existing class code/key or create a class.
+This section should reflect the team's actual development process rather
+than assumed tools or dependencies.
 
-## Optional: turn on live AI and permanent storage
+## 7. Responsible use, privacy, and accessibility
 
-Copy `backend/.env.example` to `backend/.env` and fill in only what you need. Creating any project `.env`/`.env.local` file switches the teacher pages to real-data-only mode; no synthetic roster is loaded, even if the file is incomplete. Never commit this file.
+LearnLens is intended to support learning, not replace a learner's
+reasoning or a teacher's judgment. AI-generated explanations may be
+incorrect or incomplete and should be checked against reliable learning
+materials. Avoid submitting sensitive personal information. Do not
+publish secrets in the repository.
 
-| Goal | Set in `backend/.env` |
-|---|---|
-| Live AI | `OPENROUTER_API_KEY` (free model) and/or `GEMINI_API_KEY` |
-| Real teacher classrooms with durable records | `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, then run `supabase/schema.sql` |
+Describe the privacy, retention, language-support, and accessibility
+behavior that is actually implemented. Do not promise data deletion,
+language coverage, or accessibility features unless they have been
+tested.
 
-Without Supabase, local real-data mode keeps real session data in memory and **a backend restart clears classes and students**. On Vercel, classroom creation and student joining are blocked until Supabase is configured and reachable, so the site does not pretend that ephemeral serverless memory is a persistent classroom database.
+## 8. Current limitations
 
-## How it is built
+Known general limitations of an AI-assisted learning tool include the
+possibility of incorrect explanations and inconsistent performance
+across subjects, question types, and languages. The project's actual
+limitations should be demonstrated and documented honestly, including:
 
-- **Frontend:** Next.js, React, TypeScript, Tailwind
-- **Backend:** FastAPI, Pydantic, PyMuPDF
-- **AI (optional):** OpenRouter, Gemini
-- **Storage:** in-memory by default, Supabase optional
-- **Lessons:** local keyword search (BM25-style) over `content/notes.json`. No vector database.
-- **Mastery:** a simple Bayesian-knowledge-tracing-style estimate with a 14-day forgetting half-life. A skill stays *provisional* until a successful retest at least 24 hours later.
+-   The AI may misinterpret a learner's reasoning or provide an
+    incorrect explanation.
+-   The level of testing and evidence for learning improvement may be
+    limited.
+-   Any planned, incomplete, or externally dependent features should be
+    clearly identified during the demo.
 
-## Check it
+Update these points if the team has verified more specific limitations
+during testing.
 
-```bash
-python -m pytest -q backend/tests      # backend tests
-python scripts/verify_content_bundle.py # teaching-note integrity
-cd web && npm run typecheck             # frontend types
-```
+## 9. Demo Video Plan (5 Minutes Maximum)
 
-## Ready to go live
+1. **0:00–0:30 — Problem:** Explain why a score alone may not help a learner understand a mistake.
+2. **0:30–1:00 — Product Introduction:** Introduce LearnLens AI, its purpose, and its target users.
+3. **1:00–3:15 — Working Demo:** Demonstrate one complete student workflow and any functional teacher-facing features.
+4. **3:15–4:15 — AI and Implementation:** Explain how OpenRouter is integrated, identify the configured AI model, and describe the data and testing performed.
+5. **4:15–5:00 — Impact and Limitations:** Explain the expected learning benefits, acknowledge current limitations, and display the live website.
 
-| Area | What is in place |
-|---|---|
-| Privacy | Nickname only, explicit consent, and a one-click **delete my data** page |
-| Access | Teacher key (stored hashed). Roster, heatmap and feedback are visible only to the class's own teacher |
-| Abuse protection | Per-IP rate limits, real file-type checks on uploads (PDF/PNG/JPEG/WebP), 3.5 MB upload cap, browser security headers |
-| Data | Separate data per browser. Add Supabase for storage that survives restarts |
-| AI | Diagnoses are shown as hypotheses with their evidence. Teachers review before acting |
+**Total duration: 5 minutes.** Keep the recording within the limit and demonstrate only features that work in the deployed application.
 
+Record the actual deployed application. Do not edit the video in a way
+that implies a feature works when it does not.
 
-**Good to know:** `CSE-A` is synthetic local-demo data only, and the sample worksheet is a fictional fixture. Neither is presented as a real classroom record on the hosted website. Mastery scores are an educational estimate, not a grade.
+## 10. Team
+
+-   **Team name:** Learn Lens
+-   **College:** RV College of Engineering
+-   **Kenver Daren D Cunha** --- Team Leader, Full-Stack Integration
+-   **Iswar Iyer** --- AI Engineer
+-   **Saksham Garg** --- Data QA Research Lead
+-   **Sarthak Shetty** --- Product, UX, and Pitch Lead
+
+## 11. Hackathon submission
+
+-   **Event:** Craft N Code Karnataka 2026
+-   **Theme:** AI for Education
+-   **Live URL:** https://learnlens-ai-beta.vercel.app/
+-   **Official submission method:** Open a pull request to the official
+    hackathon repository. Place the completed submission file at
+    `submissions/LearnLens/submission.md`, following the official
+    template exactly.
+
+Before submitting, ensure the source repository is public, the demo
+video is no longer than five minutes, the slide deck contains no more
+than eight slides, and every link opens without requiring the judges to
+request access.
