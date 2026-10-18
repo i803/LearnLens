@@ -92,6 +92,5 @@ cd web && npm run typecheck             # frontend types
 | Data | Separate data per browser. Add Supabase for storage that survives restarts |
 | AI | Diagnoses are shown as hypotheses with their evidence. Teachers review before acting |
 
-**Go-live checklist:** set the Supabase keys, set `FRONTEND_ORIGINS` to your site URL, add an AI key if you want live AI, then follow [docs/DEPLOY_VERCEL.md](docs/DEPLOY_VERCEL.md).
 
 **Good to know:** `CSE-A` is synthetic local-demo data only, and the sample worksheet is a fictional fixture. Neither is presented as a real classroom record on the hosted website. Mastery scores are an educational estimate, not a grade.
