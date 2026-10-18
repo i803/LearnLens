@@ -99,4 +99,3 @@ cd web && npm run typecheck             # frontend types
 - The 45 teaching notes include 13 AI-assisted drafts marked *review pending*. Lessons, translations and reteach plans need teacher review.
 - Diagnoses are hypotheses, not grades. Mastery scores are a heuristic and must not be used for grading or placement.
 - Not production-ready: it needs real authentication, rate limiting, upload scanning and institutional privacy approval before any school use.
-- Built by extending an earlier LearnLens project, not from a blank repository during the hackathon (see `docs/DECISIONS.md`).
