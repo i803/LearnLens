@@ -1,0 +1,14 @@
+'use client'
+
+import React, { useEffect, useMemo, useRef, useState } from 'react'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
+import { ArrowRight, BarChart3, BookOpen, BrainCircuit, Check, ChevronRight, CircleHelp, FileCheck2, FileText, Flame, Gauge, Menu, MoreHorizontal, Plus, RefreshCw, Search, Sparkles, Target, Upload, Users, X, AlertTriangle, Clock3, Pencil, RotateCcw, Send, Database, Activity } from 'lucide-react'
+import { api, slugify } from '@/lib/api'
+import { getStudentId, loadState, saveState, type SessionState } from '@/lib/session'
+
+import { ProgressData, TeacherData, HealthData, normalizeProgressData, conceptLabel, Logo, Button, ProgressBar, StatCard, Shell, PageHeader, Thinking } from '@/components/ui-kit'
+
+export function TopicDiagnosisPage(){ const router=useRouter();const s=loadState<any>('learnlens_session',null); useEffect(()=>{if(!s?.topicDiagnosticResult)router.replace('/student/learn')},[router,s]); if(!s?.topicDiagnosticResult)return <Shell><div className="mx-auto max-w-3xl"><Thinking steps={['Loading diagnostic result','Preparing your learning snapshot']}/></div></Shell>; const r=s.topicDiagnosticResult; return <Shell><div className="mx-auto max-w-4xl px-1"><PageHeader eyebrow="Learning snapshot" title="Here is what your answers suggest." description="A short diagnostic is only a hypothesis. The next step is a targeted verification using new problems."/><div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]"><div className="rounded-2xl border border-[#dbe4dc] bg-white p-6"><p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9b6c3e]">Possible learning gap</p><h2 className="mt-3 font-serif text-3xl tracking-[-0.04em] text-[#183e3c]">{r.likelySkill||s.topic}</h2><p className="mt-4 text-sm leading-7 text-[#758580]">{r.likelyMisconception||'The diagnostic suggests an area worth verifying with fresh problems.'}</p><div className="mt-6 rounded-xl bg-[#edf5ef] p-4"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#39756d]">Diagnostic evidence</p><p className="mt-2 text-sm text-[#496b63]">You scored {Math.round(r.scorePercent)}% on the initial topic diagnostic.</p></div></div><div className="rounded-2xl border border-[#eadfce] bg-[#fffaf1] p-6"><p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9b6c3e]">Verify next</p><h2 className="mt-3 text-xl font-semibold text-[#604c37]">Check whether the gap is real.</h2><p className="mt-3 text-sm leading-6 text-[#7d684e]">We&apos;ll generate new questions around the skill that appeared weakest.</p><Button href={`/student/verify?mode=topic&phase=verification&concept=${encodeURIComponent(s.conceptId)}&name=${encodeURIComponent(s.conceptName)}`} className="mt-6">Start verification <ArrowRight className="size-4"/></Button></div></div></div></Shell> }
+
+export default TopicDiagnosisPage;

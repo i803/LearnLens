@@ -1,0 +1,19 @@
+{
+  "id": "WS-001-Q1",
+  "synthetic": false,
+  "labelled_by": "reviewer IDs or adjudication label; no personal names",
+  "question": {
+    "questionText": "De-identified question text",
+    "studentAnswer": "De-identified student work/answer",
+    "teacherFeedback": "Optional prior feedback, if it exists",
+    "errorType": "conceptual",
+    "skill": "Skill being assessed"
+  },
+  "expectedTag": "final_adjudicated_tag_from_misconceptions_json",
+  "predictedTag": null,
+  "expectedMarks": null,
+  "predictedMarks": null,
+  "processingMs": null,
+  "providerOk": null,
+  "needsHumanReview": true
+}

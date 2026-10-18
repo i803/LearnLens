@@ -1,0 +1,30 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# JavaScript
+node_modules/
+.next/
+web/.next/
+web/node_modules/
+.vercel/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build / runtime state
+*.tsbuildinfo
+backend/data/*.sqlite3
+backend/data/*.db
+eval/results/*.json
+.DS_Store
+.pytest_cache/
+*.log
+Thumbs.db
