@@ -38,11 +38,11 @@ Requirements: Python 3.11+ and Node.js 20.9+ (Node 22 recommended for this Next.
 
 From the project root, create a virtual environment, install dependencies and copy the safe template:
 
-**Windows PowerShell**
+**Command Prompt**
 
-```powershell
+```CMD
 cd backend
-py -m venv .venv
+python3 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
