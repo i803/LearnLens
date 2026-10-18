@@ -179,7 +179,7 @@ during testing.
 -   **Live URL:** https://learnlens-ai-beta.vercel.app/
 -   **Official submission method:** Open a pull request to the official
     hackathon repository. Place the completed submission file at
-    `submissions/LearnLens/submission.md`, following the official
+    `submissions/_TEMPLATE/submission.md`, following the official
     template exactly.
 
 Before submitting, ensure the source repository is public, the demo
