@@ -16,10 +16,6 @@ difficulties can help teachers plan focused follow-up instruction.
 -   **Google Slides:**
     https://docs.google.com/presentation/d/1q64tbaRnrShLjewuNOyLIGgVQteb5G1RzcAqud16Mis/edit?usp=sharing
 
-**Access check:** The Drive video and Slides must be set to **Anyone
-with the link --- Viewer**. Test both links in a private/incognito
-browser window before submitting.
-
 ## 1. Problem and target users
 
 Students may receive a score or correction without understanding the
