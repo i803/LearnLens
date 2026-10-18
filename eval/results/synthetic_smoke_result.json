@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-10-17T19:15:33.793325+00:00",
+  "evidenceType": "synthetic smoke test - not human evaluation",
+  "isSyntheticOnly": true,
+  "n": 8,
+  "tagAccuracy": 1.0,
+  "macroF1": 1.0,
+  "perTag": {
+    "arithmetic_slip": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "difference_direction_reversed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "disjointness_confusion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "finite_vs_infinite": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "interval_endpoint_inclusion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "negative_solution_omitted": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "set_builder_domain_ignored": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "union_overlap_double_count": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    }
+  },
+  "marksMAE": null,
+  "processingMs": {
+    "n": 0,
+    "median": null,
+    "p95": null
+  },
+  "provider": {
+    "n": 0,
+    "successRate": null
+  },
+  "humanReviewFlagRate": 0.0,
+  "warning": "Synthetic rule smoke tests are not model benchmarks, field validation, classroom impact evidence, or an accuracy claim."
+}

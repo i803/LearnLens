@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+LearnLens AI helps students understand why an answer went wrong—not just the mark they lost.
+
+2
+00:00:04,000 --> 00:00:09,000
+I'll start with a sample mathematics worksheet.
+
+3
+00:00:09,000 --> 00:00:15,000
+It extracts the work and suggests a possible misconception for the student to verify.
+
+4
+00:00:15,000 --> 00:00:21,000
+Then it checks understanding and retrieves a focused lesson from its bundled learning notes.
+
+5
+00:00:21,000 --> 00:00:28,000
+Practice updates a provisional mastery estimate; confirmation waits for a delayed retest.
+
+6
+00:00:28,000 --> 00:00:37,000
+Teachers can spot class-level patterns from saved student activity and draft a short reteach plan.
+
+7
+00:00:37,000 --> 00:00:42,000
+LearnLens connects evidence, targeted learning, practice, and spaced review in one flow.

@@ -1,0 +1,407 @@
+[
+  {
+    "id": "set-01",
+    "title": "Meaning of a set",
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "content": "A set is a well-defined collection of distinct objects. The objects are called elements or members. Use braces to write a roster, for example A = {1, 2, 3}.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-02",
+    "title": "Roster notation",
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "content": "Roster notation lists each element inside braces. An element is not repeated in a set; {1, 1, 2} represents the same set as {1, 2}.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-03",
+    "title": "Set-builder notation",
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "content": "Set-builder notation describes members using a condition, such as {x in N : x is even and x <= 8}. Read the colon as 'such that'. Every listed member must satisfy the condition.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-04",
+    "title": "Domain matters",
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "content": "In {x in Z : x squared = 9}, the domain Z means integers. Both -3 and 3 satisfy x squared = 9, so the set is {-3, 3}. Always read the domain and condition together.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-05",
+    "title": "Empty set",
+    "subject": "Mathematics",
+    "topic": "Types of sets",
+    "content": "The empty set has no elements and is written as empty braces or the empty-set symbol. For example, {x in N : 3 < x < 4} is empty because no natural number lies strictly between 3 and 4.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-06",
+    "title": "Singleton set",
+    "subject": "Mathematics",
+    "topic": "Types of sets",
+    "content": "A singleton contains exactly one element. The set {0} is not empty; it has the single member 0. Count members to distinguish it from the empty set.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-07",
+    "title": "Finite set",
+    "subject": "Mathematics",
+    "topic": "Types of sets",
+    "content": "A finite set has a countable number of elements and the count ends. The set {2, 4, 6, 8} is finite and has four elements.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-08",
+    "title": "Infinite set",
+    "subject": "Mathematics",
+    "topic": "Types of sets",
+    "content": "An infinite set does not have a finite number of elements. The integers continue in positive and negative directions. The real numbers in a bounded interval such as [0, 1] are also infinite.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-09",
+    "title": "Equal sets",
+    "subject": "Mathematics",
+    "topic": "Types of sets",
+    "content": "Two sets are equal if they contain exactly the same elements. Order does not matter: {1, 2, 3} equals {3, 2, 1}. Check membership, not appearance.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-10",
+    "title": "Subset",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "A is a subset of B when every element of A is also in B. To disprove A subset B, it is enough to give one element of A that is not in B.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-11",
+    "title": "Proper subset",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "A is a proper subset of B when every member of A belongs to B and B has at least one additional member. A set is not a proper subset of itself.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-12",
+    "title": "Disjoint sets",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "Two sets are disjoint when they have no common elements. Equivalently, their intersection is the empty set. Compare the actual members rather than the labels of the sets.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-13",
+    "title": "Union",
+    "subject": "Mathematics",
+    "topic": "Set operations",
+    "content": "The union A union B contains every element that belongs to A or B or both. When writing a roster, include shared elements only once.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-14",
+    "title": "Intersection",
+    "subject": "Mathematics",
+    "topic": "Set operations",
+    "content": "The intersection A intersection B contains only elements common to both A and B. If there are no common members, the intersection is empty.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-15",
+    "title": "Set difference",
+    "subject": "Mathematics",
+    "topic": "Set operations",
+    "content": "A minus B contains elements that are in A but not in B. Start with A and remove any elements also present in B; reversing the order can produce a different result.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-16",
+    "title": "Complement",
+    "subject": "Mathematics",
+    "topic": "Set operations",
+    "content": "The complement of A contains elements in the stated universal set that are not in A. The result depends on which universal set is being used.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-17",
+    "title": "Open interval",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "An open interval (a, b) contains real numbers strictly between a and b. The endpoints a and b are excluded, shown by parentheses or open circles on a number line.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-18",
+    "title": "Closed interval",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "A closed interval [a, b] contains both endpoints and every real number between them. Square brackets mean the endpoint is included, shown by filled dots on a number line.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-19",
+    "title": "Half-open interval",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "The interval (a, b] excludes a but includes b; [a, b) includes a but excludes b. Translate each bracket separately instead of treating both endpoints the same way.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-20",
+    "title": "Interval to inequality",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "The interval (-5, 9] corresponds to -5 < x <= 9. Parentheses translate to strict inequality and square brackets translate to an inclusive inequality.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-21",
+    "title": "Inequality to interval",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "For 2 <= x < 7, the interval is [2, 7). Match the equality sign to an inclusive bracket and a strict inequality to a parenthesis.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-22",
+    "title": "Union of overlapping intervals",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "If two intervals overlap or touch while covering every point between the outer endpoints, their union can be one larger interval. Confirm that no gap is left between the intervals.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-23",
+    "title": "Difference of intervals",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "For A = [-3, 5] and B = (0, 6], A minus B is [-3, 0]. The point 0 remains because B excludes 0, while points greater than 0 are removed from A.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-24",
+    "title": "Cardinality of a union",
+    "subject": "Mathematics",
+    "topic": "Finite set counting",
+    "content": "For finite sets, n(A union B) = n(A) + n(B) - n(A intersection B). Subtract the intersection once because shared elements were added twice.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-25",
+    "title": "Three-set inclusion exclusion",
+    "subject": "Mathematics",
+    "topic": "Finite set counting",
+    "content": "For three finite sets, add the three individual sizes, subtract each pairwise intersection, then add the triple intersection once. The pattern corrects over-counting.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-26",
+    "title": "Power set",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "The power set P(A) is the set of all subsets of A, including the empty set and A itself. If A has n elements, its power set has 2 to the power n members.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-27",
+    "title": "Cardinality of power set",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "A finite set with 3 elements has 2 cubed, or 8, subsets. Each element is either present or absent in a subset, giving two choices per element.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-28",
+    "title": "Cartesian product",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "The Cartesian product A cross B is the set of ordered pairs (a, b) where a is in A and b is in B. Pair order matters: (a, b) is not generally the same as (b, a).",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-29",
+    "title": "Count a Cartesian product",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "For finite sets, the number of ordered pairs in A cross B is n(A) times n(B). If A has 2 members and B has 3, the product has 6 ordered pairs.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-30",
+    "title": "Check a proposed member",
+    "subject": "Mathematics",
+    "topic": "Sets",
+    "content": "To test whether a value belongs to a set-builder set, substitute it into the condition and check the stated domain. A value is included only if both the domain and condition are satisfied.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-31",
+    "title": "Check equality using membership",
+    "subject": "Mathematics",
+    "topic": "Set relations",
+    "content": "To show two finite sets are equal, check that every element of the first appears in the second and every element of the second appears in the first. Equal size alone does not prove equality.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "set-32",
+    "title": "Common endpoint in interval union",
+    "subject": "Mathematics",
+    "topic": "Intervals",
+    "content": "Intervals [1, 4] and (4, 7] do not both include 4, but the first interval includes it, so their union covers every point from 1 through 7. Draw a number line to check endpoint coverage.",
+    "attribution": "LearnLens team-authored teaching note",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "alg-01",
+    "title": "Preserve equality when solving an equation",
+    "subject": "Mathematics",
+    "topic": "Linear algebra and equations",
+    "content": "To solve an equation, do the same permitted operation to both sides so equality is preserved. For 3x + 5 = 17, subtract 5 on both sides to get 3x = 12, then divide both sides by 3 to get x = 4. Check the result in the original equation.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "alg-02",
+    "title": "Distribute a negative sign correctly",
+    "subject": "Mathematics",
+    "topic": "Algebraic signs",
+    "content": "A minus sign before brackets changes the sign of every term inside: -(a - b) = -a + b. For example, -(3x - 4) = -3x + 4. Expand each term, then simplify; do not change the sign of only the first term.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "alg-03",
+    "title": "Add fractions with a common denominator",
+    "subject": "Mathematics",
+    "topic": "Fractions and algebra",
+    "content": "For nonzero denominators, a/b + c/d = (ad + bc)/(bd). Find a common denominator, convert each fraction, then add the numerators. Example: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Do not add denominators directly.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "alg-04",
+    "title": "Substitute a value using parentheses",
+    "subject": "Mathematics",
+    "topic": "Substitution and expressions",
+    "content": "Replace the specified variable everywhere it occurs, keeping the expression's grouping. Parentheses help when substituting a negative value. If x = -2, then x^2 - 3x = (-2)^2 - 3(-2) = 4 + 6 = 10. Squaring -2 gives positive 4.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "mat-01",
+    "title": "Apply a matrix row operation to the full row",
+    "subject": "Mathematics",
+    "topic": "Matrices and row operations",
+    "content": "An elementary row operation acts on every entry in the selected row. For R2 <- R2 - 3R1, subtract three times each entry of row 1 from the corresponding entry of row 2. Valid elementary operations are swapping rows, multiplying a row by a nonzero scalar, and adding a multiple of one row to another row.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "mat-02",
+    "title": "Calculate a two-by-two determinant",
+    "subject": "Mathematics",
+    "topic": "Matrices and determinants",
+    "content": "For a 2 by 2 matrix [[a, b], [c, d]], the determinant is ad - bc. Multiply the main diagonal entries and subtract the product of the other diagonal. Example: det([[2, 1], [3, 4]]) = (2)(4) - (1)(3) = 5. The second product is subtracted, not added.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "mat-03",
+    "title": "Keep the alternating signs in a three-by-three determinant",
+    "subject": "Mathematics",
+    "topic": "Matrices and determinants",
+    "content": "Expanding a 3 by 3 determinant along the first row uses the sign pattern plus, minus, plus. For [[a,b,c],[d,e,f],[g,h,i]], det = a(ei - fh) - b(di - fg) + c(dh - eg). Compute each 2 by 2 minor carefully and keep the middle term negative.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "unit-01",
+    "title": "Check units and dimensions before combining quantities",
+    "subject": "Physics",
+    "topic": "Units and dimensional analysis",
+    "content": "Physical quantities can be added or compared only when their dimensions and units are compatible. In a valid equation, both sides must have the same dimensions. Multiplication and division combine dimensions, while adding metres to seconds is not meaningful. Convert units before comparing numerical values.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "formula-01",
+    "title": "Check when a formula is valid",
+    "subject": "Mathematics",
+    "topic": "Formula selection and assumptions",
+    "content": "Before using a formula, identify its conditions and the quantities it expects. For the quadratic formula, the equation must be in ax^2 + bx + c = 0 form with a ≠ 0 (that is, a is not zero). For a slope computed as change in y divided by change in x, change in x must not be zero. State the substitution and check that the conditions hold.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "reason-01",
+    "title": "Explain why each step follows",
+    "subject": "Mathematics",
+    "topic": "Mathematical reasoning",
+    "content": "A complete solution gives both the operation and the reason it is valid. Name the rule or property, keep equality balanced, define symbols when needed, and connect the final result to the question. A correct sequence of calculations without the requested justification may be incomplete when reasoning marks are awarded.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "question-01",
+    "title": "Read the command word and constraints first",
+    "subject": "Mathematics",
+    "topic": "Interpreting exam questions",
+    "content": "Before solving, mark the command word (such as find, prove, compare, or state), the requested quantity, the allowed domain, and any conditions. A method can be mathematically correct but still not answer the question asked. Re-read the last line and check that the final response includes every requested part and its units when relevant.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "arith-01",
+    "title": "Check arithmetic independently",
+    "subject": "Mathematics",
+    "topic": "Arithmetic and answer checking",
+    "content": "After choosing a correct method, reduce arithmetic slips by recalculating the key operation independently, checking signs and brackets, estimating the answer's size, and substituting a result back into the original equation when possible. Record a clear intermediate line so a reviewer can locate an arithmetic error separately from a concept error.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  },
+  {
+    "id": "set-33",
+    "title": "Union and intersection answer different questions",
+    "subject": "Mathematics",
+    "topic": "Set operations",
+    "content": "The union A union B contains every element that is in A or in B (or in both). The intersection A intersect B contains only elements that are in both sets. For A = {1,2,3} and B = {3,4}, the union is {1,2,3,4}, while the intersection is {3}. Use membership in the sets to decide which operation is requested.",
+    "attribution": "AI-assisted teaching-note draft; LearnLens team/educator review pending",
+    "license": "Review licensing before external reuse"
+  }
+]
